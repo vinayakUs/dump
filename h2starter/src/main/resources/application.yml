@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: h2starter
+
+  h2:
+    console:
+      enabled: true
+      path: /console
+
+  sql:
+    init:
+      mode: embedded
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+    database-platform: org.hibernate.dialect.H2Dialect
+  datasource:
+    url: jdbc:h2:mem:testdb
+    username: sa
+    password: 
+    driver-class-name: org.h2.Driver
+

@@ -1,0 +1,11 @@
+input GlobalFilterInput {
+    region:String
+    accountType:String
+    status:String
+    fromDate:String
+    toDate:String
+}
+
+type Query {
+  _empty:String 
+}
